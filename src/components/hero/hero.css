@@ -1,0 +1,48 @@
+.banner-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .banner-image {
+    background-size: cover;
+    /* background-position: center; */
+    height: 650px;
+    width: 100vw;
+    /* border-radius: 10px; */
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5); /* optional for readability */
+    /* padding: 1rem 2rem; */
+    border-radius: 8px;
+    max-width: 100%;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* optional shadow */
+  }
+  
+  /* Responsive Text Adjustments */
+  @media (max-width: 768px) {
+    .overlay-text {
+      font-size: 1.5rem;
+      padding: 0.8rem 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .overlay-text {
+      font-size: 1.2rem;
+      padding: 0.6rem 1rem;
+    }
+  }
+  
